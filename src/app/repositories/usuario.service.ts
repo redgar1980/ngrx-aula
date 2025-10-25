@@ -37,8 +37,6 @@ export class UsuarioService {
   deleteUsuario(id: number) {
     let headers = new HttpHeaders();
     headers = headers.set('Content-Type', 'application/json; charset=utf-8');
-    return this.http.delete<usuario>('http://localhost:3000/usuarios/' + id, {
-      headers: headers,
-    });
+    return this.http.delete<usuario>('http://localhost:3000/usuarios/' + id, { headers: headers });
   }
 }
