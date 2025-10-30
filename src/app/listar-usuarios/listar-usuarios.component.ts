@@ -1,6 +1,5 @@
 import { Store } from '@ngrx/store';
 import { usuario } from '../models/usuario.model';
-import { UsuarioService } from './../repositories/usuario.service';
 import { Component, OnInit } from '@angular/core';
 import { AppState } from '../stores/app-state';
 import * as fromUsuariosAction from '../stores/usuarios/usuarios.actions'
