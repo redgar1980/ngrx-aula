@@ -23,11 +23,12 @@ export class CadastroUsuariosComponent implements OnInit {
   addUsuario() {
     if(this.model.id == 0){
       // cadastrar
-      console.log('Cadastrar', this.model)
-      this.store.dispatch(fromUsuariosAction.createUsuario({payload: this.model}))
+      console.log('Cadastrar', this.model);
+      this.store.dispatch(fromUsuariosAction.createUsuario({payload: this.model}));
     } else {
       // atualizar
-      console.log('atualizar', this.model)
+      console.log('atualizar', this.model);
+      this.store.dispatch(fromUsuariosAction.updateUsuario({payload: this.model}));
     }
   }
 
